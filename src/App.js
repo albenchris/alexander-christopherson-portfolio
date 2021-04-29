@@ -7,7 +7,6 @@ import Project from './components/Project';
 function App() {
   return (
     <div>
-      Hello
       <Header />
       <About />
       <Project />
