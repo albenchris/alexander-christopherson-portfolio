@@ -1,14 +1,14 @@
 import React from 'react';
 
-const About = () => {
+const Contact = () => {
 
     return (
         <section>
-            <h2 id="about">
-                About Me
+            <h2 id="contact">
+                Contact Me
             </h2>
         </section>
     );
 }
 
-export default About;
+export default Contact;

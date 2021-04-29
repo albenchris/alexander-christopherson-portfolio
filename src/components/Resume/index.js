@@ -1,14 +1,14 @@
 import React from 'react';
 
-const About = () => {
+const Resume = () => {
 
     return (
         <section>
-            <h2 id="about">
-                About Me
+            <h2 id="resume">
+                My Resumé
             </h2>
         </section>
     );
 }
 
-export default About;
+export default Resume;

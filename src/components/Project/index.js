@@ -3,7 +3,11 @@ import React from 'react';
 const Project = () => {
 
     return (
-        <div>Project</div>
+        <section>
+            <h2 id="projects">
+                Projects
+            </h2>
+        </section>
     );
 }
 
