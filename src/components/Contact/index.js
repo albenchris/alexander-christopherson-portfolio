@@ -2,6 +2,16 @@ import React from 'react';
 
 const Contact = () => {
 
+    const handleSubmit = e => {
+        e.preventDefault();
+        console.log("handleSubmit says hello!");
+    };
+
+    const handleChange = e => {
+        console.log(e.target.name);
+        console.log("handleChange says hello!");
+    };
+
     return (
         <section>
             <h2 id="contact">
@@ -9,7 +19,7 @@ const Contact = () => {
             </h2>
             <form
                 id="contact-form"
-                // onSubmit={handleSubmit}
+                onSubmit={handleSubmit}
             >
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -17,7 +27,7 @@ const Contact = () => {
                         type="text"
                         name="name"
                         // defaultValue={name}
-                        // onBlur={handleChange}
+                        onBlur={handleChange}
                     />
                 </div>
                 <div>
@@ -26,7 +36,7 @@ const Contact = () => {
                         type="text"
                         name="email"
                         // defaultValue={email}
-                        // onBlur={handleChange}
+                        onBlur={handleChange}
                     />
                 </div>
                 <div>
@@ -35,9 +45,15 @@ const Contact = () => {
                         name="message"
                         rows="5"
                         // defaultValue={message}
-                        // onBlur={handleChange}
+                        onBlur={handleChange}
                     />
                 </div>
+                <button
+                    type="submit"
+                    data-testid="submit"
+                >
+                    Submit
+                </button>
             </form>
         </section>
     );
