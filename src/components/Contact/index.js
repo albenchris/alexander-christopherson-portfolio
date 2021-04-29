@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
 
 const Contact = () => {
 
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const { name, email, message } = formState;
+
+    const [errorMessage, setErrorMessage] = useState('');
+
     const handleSubmit = e => {
         e.preventDefault();
-        console.log("handleSubmit says hello!");
+        console.log(formState);
     };
 
     const handleChange = e => {
-        console.log(e.target.name);
-        console.log("handleChange says hello!");
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            isValid ? setErrorMessage('') : setErrorMessage('Your email is invalid');
+        } else {
+            e.target.value.length ? setErrorMessage('') : setErrorMessage(`${e.target.name} is required`);
+        }
+
+        if (!errorMessage) setFormState({
+            ...formState,
+            [e.target.name]: e.target.value
+        });
     };
 
     return (
@@ -21,12 +36,22 @@ const Contact = () => {
                 id="contact-form"
                 onSubmit={handleSubmit}
             >
+                
+                {errorMessage && (
+                    <div>
+                        <p>
+                            {errorMessage}
+                        </p>
+                    </div>
+                )}
+
+
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input
                         type="text"
                         name="name"
-                        // defaultValue={name}
+                        defaultValue={name}
                         onBlur={handleChange}
                     />
                 </div>
@@ -35,7 +60,7 @@ const Contact = () => {
                     <input
                         type="text"
                         name="email"
-                        // defaultValue={email}
+                        defaultValue={email}
                         onBlur={handleChange}
                     />
                 </div>
@@ -44,7 +69,7 @@ const Contact = () => {
                     <textarea
                         name="message"
                         rows="5"
-                        // defaultValue={message}
+                        defaultValue={message}
                         onBlur={handleChange}
                     />
                 </div>
