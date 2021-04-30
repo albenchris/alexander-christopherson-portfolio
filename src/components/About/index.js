@@ -8,7 +8,7 @@ const About = () => {
             <h2 id="about">
                 About Me
             </h2>
-            <img src={photo} />
+            <img src={photo} alt="Alex adjusting his tie" />
             <p>
                 I'm a full stack developer in Milwaukee, WI.
                 I have an eye for detail that helps me keep organized and debug easily.
