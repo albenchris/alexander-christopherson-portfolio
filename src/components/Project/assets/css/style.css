@@ -1,0 +1,74 @@
+.card {
+    position: relative;
+    background: linear-gradient(
+        to right top,
+        rgba(65, 231, 140, 0.568),
+        rgba(92, 52, 6, 0.144)
+    );
+    width: 350px;
+    height: 200px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card,
+.content,
+.image-container,
+.link-container {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.link-container {
+    flex-direction: row;
+}
+
+.content {
+    position: absolute;    
+    justify-content: space-between;
+    height: 200%;
+    background-size: cover;
+    background-position: center;
+    transition: ease-in-out;
+}
+
+.content:hover {
+    height: 70%;
+}
+
+.image-container {   
+    width: 300px;
+    height: 200px;
+}
+
+.image-container img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.project-name,
+.project-link {
+    background: linear-gradient(
+        to right bottom,
+        rgba(39, 39, 39, 0.7),
+        rgba(0, 0, 0, 0.3)
+    );
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.project-name,
+.project-link a {
+    font-weight: 600;
+    color: rgba(0, 230, 142, 1);
+}
+
+.project-link {
+    margin: 10px;
+}
