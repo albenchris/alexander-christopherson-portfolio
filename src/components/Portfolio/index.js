@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '../Project';
+import repos from '../Project/repos.json';
 
 const Portfolio = () => {
 
@@ -9,7 +10,15 @@ const Portfolio = () => {
                 Projects
             </h2>
             <div className="project-container">
-                <Project />
+                {repos.map(repo => (
+                    <Project
+                        name={repo.name}
+                        image={repo.image}
+                        repositoryLink={repo.repositoryLink}
+                        deployedLink={repo.deployedLink}
+                        key={repo.id}
+                    />
+                ))}
             </div>
         </section>
     );
