@@ -1,31 +1,32 @@
 import React from 'react';
+import './assets/css/style.css';
 
 const Nav = () => {
 
     return (
         <nav>
-            <ul>
-                <li>
+            <div className="nav-container">
+                <div className="nav-link">
                     <a href="#about">
                         About
                     </a>
-                </li>
-                <li>
+                </div>
+                <div className="nav-link">
                     <a href="#projects">
                         Projects
                     </a>
-                </li>
-                <li>
+                </div>
+                <div className="nav-link">
                     <a href="#contact">
                         Contact
                     </a>
-                </li>
-                <li>
+                </div>
+                <div className="nav-link">
                     <a href="#resume">
-                        Resumé
+                        Résumé
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     );
 }

@@ -1,15 +1,16 @@
 import React from 'react';
 import Nav from '../Nav';
+import './assets/css/style.css';
 
 const Header = () => {
 
     return (
         <header>
-            <h1>
-                <a data-testid="link" href="/">
+            <div>
+                <a className="my-name" data-testid="link" href="/">
                     Alexander Christopherson
                 </a>
-            </h1>
+            </div>
             <Nav />
         </header>
     );

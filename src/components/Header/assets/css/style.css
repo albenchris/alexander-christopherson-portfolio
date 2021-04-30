@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 45px;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(6, 146, 111, 0.3)
+    );
+}
+
+.my-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 700px) {
+
+    header {
+        justify-content: center;
+    }
+
+    header div {
+        text-align: center;
+    }
+}
