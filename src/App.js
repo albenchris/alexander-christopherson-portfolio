@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 
@@ -11,7 +11,7 @@ function App() {
     <div>
       <Header />
       <About />
-      <Project />
+      <Portfolio />
       <ContactForm />
       <Resume />
       <Footer />
