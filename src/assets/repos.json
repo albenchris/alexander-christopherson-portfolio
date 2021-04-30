@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Meal Plan",
+        "image": "./project-images/meal-plan.png",
+        "repository-link": "https://github.com/IsiBee/meal-plan-challenge",
+        "deployed-link": "https://pumpkin-pie-32612.herokuapp.com/"
+    },
+    {
+        "name": "Party Assist",
+        "image": "./project-images/party-assist.png",
+        "repository-link": "https://github.com/albenchris/party-assist",
+        "deployed-link": "https://albenchris.github.io/party-assist/"
+    },
+    {
+        "name": "My Tech Blog",
+        "image": "./project-images/my-tech-blog.png",
+        "repository-link": "https://github.com/albenchris/my-tech-blog",
+        "deployed-link": "https://albenchris-my-tech-blog.herokuapp.com/"
+    },
+    {
+        "name": "Weather Dashboard",
+        "image": "./project-images/weather-dashboard.png",
+        "repository-link": "https://github.com/albenchris/weather-dashboard",
+        "deployed-link": "https://albenchris.github.io/weather-or-naut/"
+    },
+    {
+        "name": "Coding Quiz",
+        "image": "./project-images/coding-quiz.png",
+        "repository-link": "https://github.com/albenchris/coding-quiz",
+        "deployed-link": "https://albenchris.github.io/coding-quiz/"
+    },
+    {
+        "name": "Budget Tracker",
+        "image": "./project-images/budget-tracker.png",
+        "repository-link": "https://github.com/albenchris/budget-tracker",
+        "deployed-link": "https://albenchris-budget-tracker.herokuapp.com/"
+    }
+]
