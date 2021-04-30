@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../Nav';
 import './assets/css/style.css';
 
-const Header = () => {
+const Header = ({ currentPage, handlePageChange }) => {
 
     return (
         <header>
@@ -11,7 +11,10 @@ const Header = () => {
                     Alexander Christopherson
                 </a>
             </div>
-            <Nav />
+            <Nav
+                currentPage={currentPage}
+                handlePageChange={handlePageChange}
+            />
         </header>
     );
 }

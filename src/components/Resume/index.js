@@ -5,7 +5,7 @@ const Resume = () => {
 
     return (
         <section>
-            <h2 id="resume">
+            <h2 id="résumé">
                 My Résumé
             </h2>
             <div>

@@ -1,31 +1,26 @@
 import React from 'react';
 import './assets/css/style.css';
 
-const Nav = () => {
+const Nav = (props) => {
+    const tabs = ['About', 'Projects', 'Contact', 'Résumé'];
 
     return (
         <nav>
             <div className="nav-container">
-                <div className="nav-link">
-                    <a href="#about">
-                        About
-                    </a>
-                </div>
-                <div className="nav-link">
-                    <a href="#projects">
-                        Projects
-                    </a>
-                </div>
-                <div className="nav-link">
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </div>
-                <div className="nav-link">
-                    <a href="#resume">
-                        Résumé
-                    </a>
-                </div>
+                {tabs.map(tab => (
+                    <div className="nav-link" key={tab}>
+                        <a
+                            href={`#${tab.toLowerCase()}`}
+                            onClick={() => props.handlePageChange(tab)}
+                            className={
+                                props.currentPage === tab ? 'active' : ''
+                            }
+                        >
+                            {tab}
+                        </a>
+                    </div>
+
+                ))}
             </div>
         </nav>
     );
