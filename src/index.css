@@ -12,7 +12,10 @@ code {
     monospace;
 }
 
-
+.logo {
+  width: 32px;
+  height: 32px;
+}
 
 section {
   margin-bottom: 20%;
