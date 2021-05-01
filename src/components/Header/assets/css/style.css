@@ -8,9 +8,9 @@ header {
     overflow: hidden;
     top: 0;
     background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 1),
-        rgba(6, 146, 111, 1)
+        to left bottom,
+        rgba(36, 167, 158, 1),
+        rgba(92, 172, 156, 1)
     );
 }
 
