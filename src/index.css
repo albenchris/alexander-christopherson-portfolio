@@ -50,23 +50,3 @@ footer {
   z-index: 100;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  height: 10vh;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 1),
-    rgba(6, 146, 111, 1)
-  );
-}
-
-.logo {
-  margin: 0 20px;
-  width: 32px;
-  height: 32px;
-}
-
