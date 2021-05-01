@@ -8,13 +8,15 @@ const Nav = (props) => {
         <nav>
             <div className="nav-container">
                 {tabs.map(tab => (
-                    <div className="" key={tab}>
+                    <div
+                        className={
+                            props.currentPage === tab ? 'nav-link active' : 'nav-link'
+                        }
+                        key={tab}
+                    >
                         <a
                             href={`#${tab.toLowerCase()}`}
                             onClick={() => props.handlePageChange(tab)}
-                            className={
-                                props.currentPage === tab ? 'nav-link active' : 'nav-link'
-                            }
                         >
                             {tab}
                         </a>
