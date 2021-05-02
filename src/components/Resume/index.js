@@ -1,5 +1,6 @@
 import React from 'react';
 import resume from '../../assets/resume/AlexChristophersonRésumé.pdf'
+import './assets/css/style.css';
 
 const Resume = () => {
 
@@ -10,18 +11,60 @@ const Resume = () => {
             </h2>
             <div>
                 <h3>Proficiencies</h3>
-                <ul>
-                    <li>Javascript: <span>90%</span></li>
-                    <li>React: <span>80%</span></li>
-                    <li>HTML: <span>90%</span></li>
-                    <li>CSS: <span>85%</span></li>
-                    <li>Node.js: <span>90%</span></li>
-                    <li>MongoDB: <span>85%</span></li>
-                    <li>Sequelize: <span>80%</span></li>
-                    <li>MySQL: <span>70%</span></li>
-                </ul>
+                <div className="proficiency-container">
+                    <div className="bar-container">
+                        <div className="bar">
+                            <div className="bar-fill ninety">
+                                <div className="tag">Javascript</div>
+                            </div>
+                            <div className="percentage">90%</div>
+                        </div>
+                        <div className="bar">
+                            <div className="bar-fill eighty">
+                                <div className="tag">React</div>
+                            </div>
+                            <div className="percentage">80%</div>
+                        </div>
+                        <div className="bar">
+                            <div className="bar-fill ninety">
+                                <div className="tag">HTML</div>
+                            </div>
+                            <div className="percentage">90%</div>
+                        </div>
+                        <div className="bar">
+                            <div className="bar-fill eighty-five">
+                                <div className="tag">CSS</div>
+                            </div>
+                            <div className="percentage">85%</div>
+                        </div>
+                        <div className="bar">
+                            <div className="bar-fill ninety">
+                                <div className="tag">Node.js</div>
+                            </div>
+                            <div className="percentage">90%</div>
+                        </div>
+                        <div className="bar">
+                            <div className="bar-fill eighty-five">
+                                <div className="tag">MongoDB</div>
+                            </div>
+                            <div className="percentage">85%</div>
+                        </div>
+                        <div className="bar">
+                            <div className="bar-fill eighty">
+                                <div className="tag">Sequelize</div>
+                            </div>
+                            <div className="percentage">80%</div>
+                        </div>
+                        <div className="bar">
+                            <div className="bar-fill seventy">
+                                <div className="tag">MySQL</div>
+                            </div>
+                            <div className="percentage">70%</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href={resume} target="_blank" rel="noreferrer">check out my résumé here</a>
+            <a className="resume-link" href={resume} target="_blank" rel="noreferrer">check out my résumé here</a>
         </section>
     );
 }
