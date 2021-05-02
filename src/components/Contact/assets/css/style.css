@@ -1,0 +1,55 @@
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 10px auto 2px auto;
+    font-size: 16px;
+}
+
+.form-input {
+    margin: 0 2%;
+    width: 96%;
+}
+
+input,
+textarea {
+    width: 98%;
+    background-color: rgb(218, 199, 199);
+    border: none;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-stuff {
+    margin: 0 2%;
+    width: 96%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin-top: 2px;
+    background-color: darkorange;
+    color: black;
+    font-size: 15px;
+}
+
+.error-message {
+    color: rgb(233, 130, 130);
+}

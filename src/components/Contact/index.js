@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import './assets/css/style.css';
 
 const ContactForm = () => {
 
@@ -36,17 +37,7 @@ const ContactForm = () => {
                 id="contact-form"
                 onSubmit={handleSubmit}
             >
-                
-                {errorMessage && (
-                    <div>
-                        <p>
-                            {errorMessage}
-                        </p>
-                    </div>
-                )}
-
-
-                <div>
+                <div className="form-input">
                     <label htmlFor="name">Name:</label>
                     <input
                         type="text"
@@ -55,7 +46,7 @@ const ContactForm = () => {
                         onBlur={handleChange}
                     />
                 </div>
-                <div>
+                <div className="form-input">
                     <label htmlFor="email">Email:</label>
                     <input
                         type="text"
@@ -64,7 +55,7 @@ const ContactForm = () => {
                         onBlur={handleChange}
                     />
                 </div>
-                <div>
+                <div className="form-input">
                     <label htmlFor="message">Message:</label>
                     <textarea
                         name="message"
@@ -73,12 +64,20 @@ const ContactForm = () => {
                         onBlur={handleChange}
                     />
                 </div>
-                <button
-                    type="submit"
-                    data-testid="submit"
-                >
-                    Submit
-                </button>
+                <div className="form-stuff">
+                    <button type="submit" data-testid="submit">
+                        Submit
+                    </button>
+
+                    {errorMessage && (
+                        <div>
+                            <p className="error-message">
+                                {errorMessage}
+                            </p>
+                        </div>
+                    )}
+
+                </div>
             </form>
         </section>
     );
