@@ -7,7 +7,7 @@ footer {
     height: 10vh;
     background: linear-gradient(
       to right bottom,
-      rgba(255, 255, 255, 1),
+      rgba(101, 148, 162, 1),
       rgba(6, 146, 111, 1)
     );
 }

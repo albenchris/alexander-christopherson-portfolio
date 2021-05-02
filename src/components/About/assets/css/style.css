@@ -24,11 +24,5 @@
 .bio-text {
     width: 50%;
     min-width: 245px;
+    color: rgba(246, 223, 206, 1);
 }
-
-/* @media screen and (max-width: 500px) {
-    
-    .about-content {
-        flex-direction: column;
-    }
-} */

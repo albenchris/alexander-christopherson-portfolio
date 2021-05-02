@@ -1,10 +1,11 @@
 * {
-  color: rgba(230, 211, 197, 1);
+  color: rgba(246, 223, 206, 1);
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(38, 127, 84);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

@@ -1,5 +1,6 @@
 import React from 'react';
 import resume from '../../assets/resume/AlexChristophersonRésumé.pdf'
+import icon from './assets/images/resume-icon.svg'
 import './assets/css/style.css';
 
 const Resume = () => {
@@ -64,7 +65,14 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-            <a className="resume-link" href={resume} target="_blank" rel="noreferrer">check out my résumé here</a>
+            <div className="resume-link">
+                <div>
+                    check out my résumé here
+                </div>
+                <a href={resume} target="_blank" rel="noreferrer">
+                    <img src={icon} className="resume-icon" alt="résumé icon" />
+                </a>
+            </div>
         </section>
     );
 }

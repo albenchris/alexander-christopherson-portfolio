@@ -58,11 +58,6 @@
 /* ======= FLIP EFFECT ========= */
 .flip-card {
     position: relative;
-    background: linear-gradient(
-        to right top,
-        rgba(65, 231, 140, 0.568),
-        rgba(92, 52, 6, 0.144)
-    );
     min-width: 350px;
     height: 150px;
     margin: 1rem;
@@ -91,7 +86,11 @@
 }
   
 .flip-card-back {
-    background-color: rgba(180, 137, 111, 1);
+    background: linear-gradient(
+        to right top,
+        rgba(65, 231, 140, 1),
+        rgba(190, 190, 190, 1)
+    );
     transform: rotateY(180deg);
 }
 /* ===== FLIP EFFECT END ======== */
@@ -99,6 +98,8 @@
 @media screen and (max-width: 540px) {
     
     .flip-card {
+        padding: 0;
+        margin: 0;
         min-width: 200px;
         width: 90%;
         height: 50vw;
@@ -116,16 +117,30 @@
     }
     
     .flip-card-back {
-        height: 100%;
+        top: 15%;
+        height: 70%;
         justify-content: space-between;
         transition: none;
         transform: none;
-        background-color: rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, 0);
+        opacity: 0;
     }
 
     .image-container {
         top: 15%;
         height: 70%;
+    }
+
+    .flip-card-inner:hover .content {
+        opacity: 1;
+    }
+
+    .content {
+        flex-direction: unset;
+    }
+
+    .link-container {
+        width: 100%;
     }
 }
 
@@ -138,19 +153,6 @@
 
     .image-container img {
         height: 100%;
-    }
-
-    .content {
-        flex-direction: unset;
-        opacity: 0;
-    }
-
-    .flip-card-inner:hover .content {
-        opacity: 1;
-    }
-
-    .link-container {
-        width: 100%;
     }
 
     .project-link {
