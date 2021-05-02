@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alexander-christopherson-portfolio/static/css/main.d118df5c.chunk.css",
+    "main.css": "/alexander-christopherson-portfolio/static/css/main.03ca6a07.chunk.css",
     "main.js": "/alexander-christopherson-portfolio/static/js/main.99f59ec3.chunk.js",
     "main.js.map": "/alexander-christopherson-portfolio/static/js/main.99f59ec3.chunk.js.map",
     "runtime-main.js": "/alexander-christopherson-portfolio/static/js/runtime-main.ae4eb315.js",
@@ -10,7 +10,7 @@
     "static/js/3.b70e8cc4.chunk.js": "/alexander-christopherson-portfolio/static/js/3.b70e8cc4.chunk.js",
     "static/js/3.b70e8cc4.chunk.js.map": "/alexander-christopherson-portfolio/static/js/3.b70e8cc4.chunk.js.map",
     "index.html": "/alexander-christopherson-portfolio/index.html",
-    "static/css/main.d118df5c.chunk.css.map": "/alexander-christopherson-portfolio/static/css/main.d118df5c.chunk.css.map",
+    "static/css/main.03ca6a07.chunk.css.map": "/alexander-christopherson-portfolio/static/css/main.03ca6a07.chunk.css.map",
     "static/js/2.9cd6d7bc.chunk.js.LICENSE.txt": "/alexander-christopherson-portfolio/static/js/2.9cd6d7bc.chunk.js.LICENSE.txt",
     "static/media/AlexChristophersonRésumé.70644e4c.pdf": "/alexander-christopherson-portfolio/static/media/AlexChristophersonRésumé.70644e4c.pdf",
     "static/media/alexander-pic.ab2cabeb.png": "/alexander-christopherson-portfolio/static/media/alexander-pic.ab2cabeb.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.ae4eb315.js",
     "static/js/2.9cd6d7bc.chunk.js",
-    "static/css/main.d118df5c.chunk.css",
+    "static/css/main.03ca6a07.chunk.css",
     "static/js/main.99f59ec3.chunk.js"
   ]
 }
