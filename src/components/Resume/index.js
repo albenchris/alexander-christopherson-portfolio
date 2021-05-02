@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../assets/resume/AlexChristophersonRésumé.pdf'
+import resume from './assets/resume/AlexChristophersonRésumé.pdf'
 import icon from './assets/images/resume-icon.svg'
 import './assets/css/style.css';
 

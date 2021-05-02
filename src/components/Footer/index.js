@@ -1,7 +1,7 @@
 import React from 'react';
-import github from '../../assets/images/github.svg';
-import linkedin from '../../assets/images/linkedin.svg';
-import stackOverflow from '../../assets/images/stackoverflow.svg';
+import github from './assets/images/github.svg';
+import linkedin from './assets/images/linkedin.svg';
+import stackOverflow from './assets/images/stackoverflow.svg';
 import './assets/css/style.css';
 
 const Footer = () => {
