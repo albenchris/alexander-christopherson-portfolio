@@ -1,5 +1,6 @@
 .proficiency-container {
     width: 90vw;
+    max-width: 500px;
 }
 
 .bar {
