@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { init, sendForm } from 'emailjs-com';
 import { validateEmail } from '../../utils/helpers';
 import './assets/css/style.css';
+init("user_eicA7XxHepWPbv7ePxLFy");
+
 
 const ContactForm = () => {
 
@@ -12,6 +15,15 @@ const ContactForm = () => {
     const handleSubmit = e => {
         e.preventDefault();
         console.log(formState);
+        const form = document.querySelector('#contact-form');
+
+        sendForm('default_service', 'template_mgzzki8', '#contact-form')
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                form.reset();
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
     };
 
     const handleChange = e => {
@@ -43,6 +55,7 @@ const ContactForm = () => {
                         type="text"
                         name="name"
                         defaultValue={name}
+                        placeholder="Name"
                         onBlur={handleChange}
                     />
                 </div>
@@ -52,6 +65,7 @@ const ContactForm = () => {
                         type="text"
                         name="email"
                         defaultValue={email}
+                        placeholder="Email"
                         onBlur={handleChange}
                     />
                 </div>
@@ -61,6 +75,7 @@ const ContactForm = () => {
                         name="message"
                         rows="5"
                         defaultValue={message}
+                        placeholder="Message"
                         onBlur={handleChange}
                     />
                 </div>

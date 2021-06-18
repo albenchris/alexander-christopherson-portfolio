@@ -39,7 +39,6 @@ textarea:enabled {
     outline: none;
     border: 1px solid rgba(216, 88, 60, 1);
     background-color: rgba(191, 200, 192, 1);
-    color: rgba(191, 200, 192, 1);
 }
 
 input:-webkit-autofill,
