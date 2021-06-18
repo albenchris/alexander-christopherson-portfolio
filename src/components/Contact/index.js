@@ -11,6 +11,7 @@ const ContactForm = () => {
     const { name, email, message } = formState;
 
     const [errorMessage, setErrorMessage] = useState('');
+    const [statusMessage, setStatusMessage] = useState('');
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -25,12 +26,16 @@ const ContactForm = () => {
                 nameInput.value = '';
                 emailInput.value = '';
                 messageInput.value = '';
+                setStatusMessage('Thank you for your message!');
             }, function(error) {
                 console.log('FAILED...', error);
+                setErrorMessage('Something went wrong...');
             });
     };
 
     const handleChange = e => {
+        setStatusMessage('');
+
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             isValid ? setErrorMessage('') : setErrorMessage('Your email is invalid');
@@ -92,6 +97,14 @@ const ContactForm = () => {
                         <div>
                             <p className="error-message">
                                 {errorMessage}
+                            </p>
+                        </div>
+                    )}
+
+                    {statusMessage && (
+                        <div>
+                            <p className="status-message">
+                                {statusMessage}
                             </p>
                         </div>
                     )}
