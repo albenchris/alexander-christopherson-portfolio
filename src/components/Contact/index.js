@@ -15,12 +15,16 @@ const ContactForm = () => {
     const handleSubmit = e => {
         e.preventDefault();
         console.log(formState);
-        const form = document.querySelector('#contact-form');
+        const nameInput = document.querySelector('#name');
+        const emailInput = document.querySelector('#email');
+        const messageInput = document.querySelector('#message');
 
         sendForm('default_service', 'template_mgzzki8', '#contact-form')
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
-                form.reset();
+                nameInput.value = '';
+                emailInput.value = '';
+                messageInput.value = '';
             }, function(error) {
                 console.log('FAILED...', error);
             });
@@ -54,8 +58,8 @@ const ContactForm = () => {
                     <input
                         type="text"
                         name="name"
+                        id="name"
                         defaultValue={name}
-                        placeholder="Name"
                         onBlur={handleChange}
                     />
                 </div>
@@ -64,8 +68,8 @@ const ContactForm = () => {
                     <input
                         type="text"
                         name="email"
+                        id="email"
                         defaultValue={email}
-                        placeholder="Email"
                         onBlur={handleChange}
                     />
                 </div>
@@ -73,9 +77,9 @@ const ContactForm = () => {
                     <label htmlFor="message">Message:</label>
                     <textarea
                         name="message"
+                        id="message"
                         rows="5"
                         defaultValue={message}
-                        placeholder="Message"
                         onBlur={handleChange}
                     />
                 </div>
