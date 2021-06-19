@@ -69,7 +69,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 1.3s;
     transform-style: preserve-3d;
 }
 
@@ -94,6 +94,33 @@
     transform: rotateY(180deg);
 }
 /* ===== FLIP EFFECT END ======== */
+
+/* ===== FLIP EFFECT OVERRIDE UNTIL POLISHED ===== */
+.flip-card {
+    transform-style: flat;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: none;
+    transition: none;
+}
+
+.flip-card-front, .flip-card-back {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.flip-card-back {
+    transition: 0.6s;
+    transform: none;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.flip-card-inner:hover .content {
+    opacity: 1;
+}
+/* ========== FLIP EFFECT OVERRIDE END =========== */
 
 @media screen and (max-width: 540px) {
     
@@ -120,7 +147,7 @@
         top: 15%;
         height: 70%;
         justify-content: space-between;
-        transition: none;
+        transition: 0.6s;
         transform: none;
         background: rgba(0, 0, 0, 0);
         opacity: 0;
